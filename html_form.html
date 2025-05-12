@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Form
+        </title>
+    </head>
+
+    <body>
+        <fieldset>
+
+            <legend>Form</legend>
+            <form>
+                <label>Name</label>
+                <br/>
+                <input type="text" pattern="[a-zA-Z ]{4,20}" title="Please enter your full name" required placeholder="Enter your name" name="uname"> 
+                <br/>
+                <label>Email</label>
+                <br/>
+                <input type="email" placeholder="Enter your email address" name="uemail"/> 
+
+                <br/>
+
+                <label>Phone</label>
+                <br/>
+                <input type="tel" pattern="[0-9]{11}" title="Please enter 11 digits phone number" placeholder="Enter your phone number" name="uemail"/> 
+
+                <br/>
+                <label>Gender</label>
+                <br/>
+                <input type="radio" value="male" name="'Gender"/>Male
+                <input type="radio" value="female" name="'Gender"/>Female
+
+                <br/>
+                <label>Courses</label>
+                <br/>
+                <input type="checkbox" value="java"  />Java 
+                <input type="checkbox" value="c++"  />C++ 
+                <input type="checkbox" value="python" />Python
+                <input type="checkbox" value="html" />HTML  
+              
+                <br/>
+                <label>Upload Photo</label>
+                <br/>
+                <input type="file" accept=".pdf" />
+
+                <br/>
+                <label>Country</label>
+                <br/>
+                    <select>
+                        <option>
+                            -----Choose Country-----
+                        </option>
+                        <option value="pakistan">
+                            Pakistan
+                        </option>
+                        <option value="india">India</option>
+                        <option value="japan">Japan</option>
+                        <option value="malysia">Malysia</option>
+                    </select>
+
+                <br/>
+                <label>Courses</label>
+                <br/>
+                <select>
+                    <optgroup label="Front End">
+                        <option value="python">Python</option>
+                        <option value="CSS">CSS</option>
+                        <option value="HTML">HTML</option>
+
+                    </optgroup>
+
+                    <optgroup label="Back end">
+                        <option value="JavaScript">Javascript</option>
+                        <option value="Node">Node</option>
+                        <option value="React">React</option>
+
+                    </optgroup>
+                </select>
+
+                <br/>
+                <label>Select Quantity</label>
+                <br/>
+                <input type="number" min="1" max="20"/>
+                <br/>
+
+                <br/>
+                <label>Time</label>
+                <br/>
+                <input type="time"/>
+                 <br/>
+
+                 <br/>
+                 <label>Date</label>
+                 <br/>
+                 <input type="date"/>
+                  <br/>
+ 
+                  <br/>
+                  <label>Week</label>
+                  <br/>
+                  <input type="week"/>
+                   <br/>
+  
+                   <br/>
+                   <label>Month</label>
+                   <br/>
+                   <input type="month"/>
+                    <br/>
+
+                    <br/>
+                   <label>Select Color</label>
+                   <br/>
+                   <input type="color"/>
+                    <br/>
+
+                    
+                    <br/>
+                   <label>URL</label>
+                   <br/>
+                   <input type="url"/>
+                    <br/>
+   
+                    <br/>
+                   <label>Range</label>
+                   <br/>
+                   <input type="range"/>
+                    <br/>
+
+                    <label>Courses Data List</label>
+                    <br/>
+                    <input type="text" list="courses"/>
+
+                    <datalist id="courses"> 
+                        <option value="C++"/>
+                        <option value="C"/>
+                        <option value="Javascript"/>
+                        <option value="Java"/>
+                        <option value="Python"/>
+                    </datalist>
+                    <br/>
+                    <option> </option>
+   
+                <label>Password</label>
+                <br/>
+                <input type="password"/>
+
+
+
+                <br/>
+                <label>Message</label>
+                <br/>
+            <textarea></textarea>
+                <br/>
+                <button type="submit">Save</button>    
+    
+                <br/>
+                <input type="reset" value="Reset"/>
+                <br/>
+                <button type="reset">Reset</button>
+            </form>
+                
+        </fieldset>   
+    </body>
+</html>
